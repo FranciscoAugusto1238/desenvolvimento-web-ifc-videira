@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <link rel="stylesheet" href="css/teste_padrao.css" />
+    <script src="js/teste_java_script.js" type="module" defer></script>
+    <script type="module">
+        import { mensagem, posts } from "js/teste_java_script.js";
+
+        console.log(mensagem);
+
+        (async () => {
+            const data = await posts();
+            console.log(data);
+        })();
+    </script>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <img src="imagem/francisco.jpg">
+</body>
+</html>
